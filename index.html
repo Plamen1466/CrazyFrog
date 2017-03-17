@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Big Challenge</title>
+
+	<style>
+		.container { width: 600px; margin: 0 auto; }
+
+		.grid { display: flex; }
+		.grid-cell { flex: 1; padding: 0 10px; }
+
+		.board,
+		.board-cell { border: 1px solid #000; }
+
+		.board { border-collapse: collapse; }
+		.board-cell { width: 90px; height: 90px; }
+
+		.board-pull { width: 60px; height: 60px; margin: 15px auto; border-radius: 50%; background: #e84545; }
+
+		.text-center { text-align: center; }
+
+		.actions { margin: 10px 0; }
+		.actions button { font-size: 30px; }
+	</style>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="grid">
+			<div class="grid-cell">
+				<h2 class="text-center">Big Challenge Game</h2>
+
+				<table class="board">
+					<tr class="board-row">
+						<td class="board-cell"></td><!-- /.board-cell -->
+
+						<td class="board-cell"></td><!-- /.board-cell -->
+
+						<td class="board-cell"></td><!-- /.board-cell -->
+					</tr><!-- /.board-row -->
+
+					<tr class="board-row">
+						<td class="board-cell"></td><!-- /.board-cell -->
+
+						<td class="board-cell"></td><!-- /.board-cell -->
+
+						<td class="board-cell"></td><!-- /.board-cell -->
+					</tr><!-- /.board-row -->
+
+					<tr class="board-row">
+						<td class="board-cell"></td><!-- /.board-cell -->
+
+						<td class="board-cell"></td><!-- /.board-cell -->
+
+						<td class="board-cell"></td><!-- /.board-cell -->
+					</tr><!-- /.board-row -->
+				</table><!-- /.board -->
+
+				<h3 class="progress text-center" hidden> alabala</h3><!-- /.text-center -->
+
+				<div class="actions text-center">
+					<button type="button" class="btn-start" id="theButton">Start!</button>
+					<button type="button" class="btn-submit" hidden>Submit Scores</button>
+				</div><!-- /.actions -->
+			</div><!-- /.grid-cell -->
+
+			<div class="grid-cell">
+				<h2 class="text-center">Leaderboard</h2><!-- /.text-center -->
+
+				<div class="leaderboard">
+					<!-- <p class="text-center">Loading scores...</p> -->
+				</div><!-- /.leaderboard -->
+			</div><!-- /.grid-cell -->
+		</div><!-- /.grid -->
+	</div><!-- /.container -->
+</body>
+</html>
